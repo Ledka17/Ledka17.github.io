@@ -5,7 +5,12 @@
     <title>LeMMaS</title>
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
 </head>
-<body>
+<body class="impress-supported impress-enabled impress-on-overview" style="height: 100%; overflow: hidden;">
+    <div class="fallback-message">
+        <p>Этот браузер не поддерживает функциональность необходмую для работы с <b>impress.js</b>.</p>
+        <p>Для лучшего восприятия презентации используйте последнию версию <b>Chrome</b>, <b>Firefox</b> или <b>Safari</b>.</p>
+    </div>
+
     <div id="impress">
         <div id="1" class="step">
             1 слайд
@@ -22,5 +27,6 @@
         <!—  и так далее остальные слайды  -->
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.min.js"></script>
+    <script>impress().init();</script>
 </body>
 </html>
