@@ -20,6 +20,9 @@
     grid-template-columns: 33% 33% 33%;
 }
 
+.wrapper .links{
+    grid-template-columns: 70% 30%;
+}
 
 body {
     font-size: 200%;
