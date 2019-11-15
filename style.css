@@ -15,12 +15,16 @@
     width: auto;
 }
 
-.wrapper {
+.grid {
     display: grid;
+}
+
+.grid .team {
     grid-template-columns: 33% 33% 33%;
 }
 
-.wrapper .links{
+.grid .links{
+    display: grid;
     grid-template-columns: 70% 30%;
 }
 
