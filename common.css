@@ -10,6 +10,18 @@
     display: flex;
 }
 
+.userPicName {
+    height: 100px;
+}
+
+.userPicName__img {
+    width: 100px;
+}
+
+.anchorImg__wrapper {
+    align-content: center;
+}
+
 .logo__image {
     max-height: 10vh;
 }

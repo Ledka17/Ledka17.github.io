@@ -11,13 +11,14 @@
     width: 800px;
 }
 
-
-
 .logo {
     width: auto;
 }
 
-
+.wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
 
 
 body {
