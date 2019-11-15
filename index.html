@@ -3,28 +3,93 @@
 <head>
     <meta charset="UTF-8" />
     <title>LeMMaS</title>
+    <link rel="stylesheet" href="style.css" media="screen,projection"/>
+    <link rel="stylesheet" href="common.css" media="screen,projection"/>
+
 </head>
 <body class="impress-supported impress-enabled impress-on-overview" style="height: 100%; overflow: hidden;">
-    <div class="fallback-message">
-        <p>Этот браузер не поддерживает функциональность необходмую для работы с <b>impress.js</b>.</p>
-        <p>Для лучшего восприятия презентации используйте последнию версию <b>Chrome</b>, <b>Firefox</b> или <b>Safari</b>.</p>
-    </div>
 
-    <div id="impress">
-        <div id="1" class="step" data-x="-700" data-y="-400" data-scale="0.25">
-            1 слайд
-            <!— здесь содержимое 1-го слайда -->
+<div id="impress" data-transition-duration="1500">
+    <div class="step" step="0" data-x="3200" data-y="0">
+
+        <header class="header">
+            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/public/assets/img/lemmaslogo.png" alt="logo">
+        </header>
+        <div class="plate plate__size-big start-game-menu">
+            <h1 id="the-problem">AGAR.io</h1>
+            <h2 id="making-presentations-is-no-fun">Мы запилили</h2>
         </div>
-        <div id="2" class="step">
-            2 слайд
-            <!— здесь содержимое 2-го слайда -->
-        </div>
-        <div id="3" class="step">
-            3 слайд
-            <!— здесь содержимое 3-го слайда -->
-        </div>
-        <!—  и так далее остальные слайды  -->
     </div>
+    <div class="step" step="1" data-x="4800" data-y="0">
+
+        <header class="header">
+            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/public/assets/img/lemmaslogo.png" alt="logo">
+        </header>
+        <div class="plate plate__size-big start-game-menu">
+            <h1 id="gui-tools-are-inflexible">Наша команда</h1>
+            <ul>
+                <li>It's hard to reorganize or import text</li>
+                <li>Slow and memory hungry</li>
+                <li>You get caught up in design early in the process.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="step" step="2" data-y="1000" data-x="4800">
+        <header class="header">
+            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/public/assets/img/lemmaslogo.png" alt="logo">
+        </header>
+        <div class="plate plate__size-big start-game-menu">
+            <h1 id="pan">Смешная статистика.</h1>
+
+        </div>
+    </div>
+    <div class="step" step="3" data-x="4800" data-y="2000" data-rotate-z="90">
+        <header class="header">
+            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/public/assets/img/lemmaslogo.png" alt="logo">
+        </header>
+        <div class="plate plate__size-big start-game-menu">
+            <h1 id="rotate">О нашем проекте</h1>
+        </div>
+    </div>
+    <div class="step" step="4" data-x="4800" data-y="2500" data-scale="0.1" data-rotate-z="90">
+        <header class="header">
+            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/public/assets/img/lemmaslogo.png" alt="logo">
+        </header>
+        <div class="plate plate__size-big start-game-menu">
+            <h1 id="and-zoom">Код проекта</h1>
+        </div>
+    </div>
+    <div class="step hidden" step="5" data-x="4000" data-scale="1" data-y="2500" data-rotate-z="90">
+
+        <header class="header">
+            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/public/assets/img/lemmaslogo.png" alt="logo">
+        </header>
+        <div class="plate plate__size-big start-game-menu">
+            <h1 id="but-prezi-is-a-gui">Пробуем проект</h1>
+        </div>
+    </div>
+    <div class="step" step="6" data-x="3200" data-y="2500" data-scale="1" data-rotate-z="90">
+
+        <header class="header">
+            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/public/assets/img/lemmaslogo.png" alt="logo">
+        </header>
+        <div class="plate plate__size-big start-game-menu">
+            <h1 id="what-about-impress-js">Ссылки на все подряд</h1>
+            <p>It's open source!</p>
+            <p>Supports pan, tilt and zoom!</p>
+        </div>
+    </div>
+    <div class="step" step="7" id="ThreeD" data-y="3700" data-rotate-x="180" data-x="3200" data-scale="1" data-rotate-z="90">
+
+        <header class="header">
+            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/public/assets/img/lemmaslogo.png" alt="logo">
+        </header>
+        <div class="plate plate__size-big start-game-menu">
+            <h1 id="in-three-dimensions">Спасибо за внимание!</h1>
+            <p><em>Ждем вас на защите...</em></p>
+        </div>
+    </div>
+</div>
     <script src="impress.js"></script>
     <script>impress().init();</script>
 </body>
