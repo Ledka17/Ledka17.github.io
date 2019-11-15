@@ -19,13 +19,13 @@
     display: grid;
 }
 
-.grid .team {
+.grid.team {
     grid-template-columns: 33% 33% 33%;
 }
 
-.grid .links{
-    display: grid;
-    grid-template-columns: 70% 30%;
+.grid.links{
+    text-align: left;
+    grid-template-columns: 50% 50%;
 }
 
 body {
