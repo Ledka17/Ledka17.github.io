@@ -1,42 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Play&display=swap");
 
+:root {
+    --headerHeight: 100px;
+}
 
 * {
     outline: none !important;
     box-sizing: border-box;
-}
-.header {
-    height: 14vh;
-    display: flex;
+    font-family: "Play", sans-serif;
 }
 
-.userPicName {
-    height: 100px;
-    align-self: center;
-}
-
-.userPicName__img {
-    Border-radius: 50px;
-    Width: 100px;
-    Height: 100px;
-}
-
-.step__image {
-    max-height: 300px;
-    max-width: 350px;
-}
-
-.logo__image {
-    max-height: 10vh;
+html,
+body {
+    width: 100%;
+    height: 100%;
 }
 
 body {
-    font-family: "Play", sans-serif;
     margin: 0;
-    height: 100vh;
-    background-image: url("https://images.app.goo.gl/uCnZ863t3yXCDLfD6");
-    max-height: 100vh;
-    overflow: hidden;
+    background-color: rgb(127, 19, 216);
     background-position: center;
     background-size: cover;
     transition: filter 0.2s;
@@ -44,32 +26,54 @@ body {
 
 a,
 button {
-    transition: all 0.3s ease-in-out;
     color: white;
 }
 
-a:hover,
-button:hover {
+.link {
+    text-decoration: none;
+    position: relative;
+    transition: 0.2s;
+
+&
+::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid white;
+    opacity: 0.7;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+}
+
+&
+:hover {
     color: gold;
-    transition: all 0.3s ease-in-out;
+
+&
+::after {
+    border-color: gold;
+}
+
+}
 }
 
 .content {
-    position: relative;
-    height: 86vh;
     display: flex;
+    min-height: calc(100vh - var(--headerHeight));
+    padding-bottom: 3em;
 }
 
 .plate {
     position: relative;
     background: #250823bf;
-    border: 1px solid white;
+    border-radius: 14px;
     padding: 2em;
+    padding-bottom: 1.1em;
     color: white;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    min-height: 400px;
 }
 
 .plate__innerContent {
@@ -77,20 +81,30 @@ button:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.plate__size-big {
+.plate__size-auto {
+    width: auto;
 }
 
-.plate h1,
+.plate__size-m {
+    min-width: 30%;
+    width: auto;
+}
+
+.plate__size-l {
+    width: 35%;
+}
+
+h1,
 h2,
 h3 {
     margin-top: 0;
 }
 
-.start-game-menu {
-    height: 80vh;
+.hidden {
+    visibility: hidden;
 }
 
 .text__align-center {
@@ -98,25 +112,23 @@ h3 {
 }
 
 .text__size-big {
-    font-size: 3em;
-    margin-bottom: 0.6em;
-    margin-top: 0.6em;
+    font-size: 2.5em;
+    margin-bottom: 0.4em;
+    margin-top: 0.2em;
+    color: #ffe8a5;
 }
 
 .text__size-normal {
     font-size: 2em;
 }
 
-.code_of_project {
-    text-align: left;
-}
-
-.anchorImg__position-absolute {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+footer {
+    position: relative;
+    bottom: 3em;
+    padding: 0 calc(10vw + 3rem);
+    color: #56009c;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -125,50 +137,48 @@ h3 {
     }
 }
 
-@media (max-height: 800px) {
-    .text__size-big {
-        font-size: 1.5em;
-    }
-}
-
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .text__size-normal {
         font-size: 1em;
     }
-}
 
-/*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-}
-
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-}
-
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
     .content {
         flex-direction: column;
     }
+}
 
-    .header {
-        height: 10vh;
+@media (max-width: 640px) {
+    footer {
+        display: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .plate {
+        max-width: 93% !important;
+    }
+
+    .text__size-big {
+        margin-top: 0.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 320px) {
+    .plate {
+        padding: 1em;
+    }
+
+    .text__size-big {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1em;
     }
 }
