@@ -10,12 +10,36 @@
 			href="components/wallpaper/style.css"
 			media="screen,projection"
 	/>
-	<script src="https://kit.fontawesome.com/ce71bee884.js" crossorigin="anonymous"></script>
+	<style>
+		.step {
+			display: none;
+		}
+
+		.step.active {
+			display: block !important;
+		}
+
+		.step.next {
+			display: none;
+		}
+
+		.step.past {
+			display: block;
+		}
+
+		.step.past.prev {
+			display: none;
+		}
+
+		.step.past.next {
+			display: none;
+		}
+	</style>
 </head>
 <body class="impress-supported impress-enabled impress-on-overview">
 <div class="wallpaper"></div>
 <div id="impress" data-transition-duration="1500">
-	<div class="step" step="0" data-x="3200" data-y="0">
+	<div class="step" step="1" data-x="3200" data-y="0">
 		<header class="header">
 			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
 		</header>
@@ -28,17 +52,45 @@
 			<div class="caption">Игра про голодные шарики, вдохновленная Agar.io</div>
 		</div>
 	</div>
-	<div class="step" step="1" data-x="4800" data-y="0">
+	<div class="step" step="2" data-x="4800" data-y="0">
 		<header class="header">
 			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
 		</header>
 		<div class="plate plate__size-big">
-			<a href="https://lemmas.ru" target="_blank" class="play-button"><span class="button-icon">😎</span>
-				Играть</a>
-			<div class="caption" style="margin-top: 60px">Давайте попробуем наш проект</div>
+			<h2>Почему игра?</h2>
+			<h1 style="font-size: 4em">
+				<span>🎮&nbsp;</span>
+				<span>
+					<span>🧰</span>
+
+					<span style="text-decoration: line-through;background-color: white;width: 200px;height: 10px;position: absolute;top: 212px;left: 392px;transform: rotate(45deg);"></span>
+					<span style="text-decoration: line-through;background-color: white;width: 200px;height: 10px;position: absolute;top: 212px;left: 392px;transform: rotate(-45deg);"></span>
+				</span>
+			</h1>
 		</div>
 	</div>
-	<div class="step" step="2" data-y="1000" data-x="4800">
+	<div class="step" step="3" data-x="4800" data-y="1000">
+		<header class="header">
+			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
+		</header>
+		<div class="plate plate__size-big">
+			<a href="#/step-4" class="play-button"><span class="button-icon">😎</span>
+				Поехали</a>
+			<div class="caption" style="margin-top: 60px">Заходите поиграть на lemmas.ru</div>
+		</div>
+	</div>
+	<div class="step" step="4" data-y="0" data-x="4800" data-z="-50000">
+		<header class="header">
+			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
+		</header>
+		<div class="plate plate__size-big architecture">
+			<h2>Что из себя представляет игра</h2>
+			<h3>🤔 🍒 🥝 🍉 ❄️ ️🍕</h3>
+			<h3>🍔 👍 😱 ☃️ ️🥒 🍅</h3>
+			<h3>🍊 🍌 🥑 🍍 🍾 🎄</h3>
+		</div>
+	</div>
+	<div class="step" step="5" data-y="0" data-x="4800" data-z="-50000" data-rotate-x="180" data-scale="0.1">
 		<header class="header">
 			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
 		</header>
@@ -46,7 +98,7 @@
 			<img src="img/architecture.png">
 		</div>
 	</div>
-	<div class="step" step="3" data-x="4800" data-y="2000" data-rotate-z="90">
+	<div class="step" step="5" data-x="4800" data-y="2200" data-rotate-z="90">
 		<header class="header">
 			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
 		</header>
@@ -58,9 +110,9 @@
 	</div>
 	<div
 			class="step"
-			step="4"
+			step="6"
 			data-x="4800"
-			data-y="2500"
+			data-y="3200"
 			data-scale="0.1"
 			data-rotate-z="90"
 	>
@@ -68,12 +120,30 @@
 			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
 		</header>
 		<div class="plate plate__size-big">
-			<h1>Давайте попробуем наш <a href="http://lemmas.ru/">проект</a></h1>
+			<p>Как поднять 💸, будучи студентом технопарка? <br>  <br> Надо всего лишь...</p>
 		</div>
+
+<!--
+		<video style="height: 100vh; width: 100vw" src="video/zastavka.mov" autoplay muted loop></video>
+-->
 	</div>
 	<div
-			class="step hidden"
-			step="5"
+			class="step"
+			step="7"
+			data-x="4800"
+			data-y="3400"
+			data-scale="0.1"
+			data-rotate-z="90"
+	>
+
+		<div class="plate plate__size-big">
+			<iframe src="https://lemmas.ru/" width="1200px" height="650px"></iframe>
+		</div>
+
+	</div>
+	<div
+			class="step"
+			step="8"
 			data-x="4000"
 			data-scale="1"
 			data-y="2500"
@@ -83,17 +153,74 @@
 			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
 		</header>
 		<div class="plate plate__size-big">
-			<h1 id="pan">Наши планы</h1>
-			<h4>Приватные комнаты</h4>
-			<h4>Платная реклама</h4>
-			<h4>Уровни для singleplayer</h4>
+			<h2>Хотите стать Трампом?</h2>
+			<img class="" style="max-width: 100%" src="img/putin.gif" alt="putin"/>
 		</div>
 	</div>
 	<div
 			class="step"
-			step="6"
+			step="9"
 			data-x="3200"
-			data-y="2500"
+			data-scale="1"
+			data-y="1600"
+			data-rotate-z="90"
+	>
+		<header class="header">
+			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
+		</header>
+		<div class="plate plate__size-big">
+			<h2>Создатели</h2>
+			<div class="wrapper">
+				<div>
+					<img class="avatar" style="max-width: 80%" src="img/avatar/max.webp" alt="putin"/>
+					<p style="font-size: 20px">Максим Сударев</p>
+					<p style="color:#f82248; font-size: 20px">frontend</p>
+				</div>
+				<div>
+					<img class="avatar" style="max-width: 80%" src="img/avatar/leda.webp" alt="putin"/>
+					<p style="font-size: 20px">Леда Можевикина</p>
+					<p style="color:#f82248; font-size: 20px">backend</p>
+				</div>
+				<div>
+					<img class="avatar" style="max-width: 80%" src="img/avatar/anton.webp" alt="putin"/>
+					<p style="font-size: 20px">Антон Кобзев</p>
+					<p style="color:#f82248; font-size: 20px">fullstack</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div
+			class="step"
+			step="10"
+			data-x="3200"
+			data-scale="1"
+			data-y="100"
+			data-rotate-z="90"
+	>
+		<header class="header">
+			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
+		</header>
+		<div class="plate plate__size-big">
+			<h1 id="pan">Наши планы</h1>
+			<ul >
+				<li>🚽 Приватные комнаты</li>
+				<li>💰 Брать деньги за рекламу</li>
+				<li>🏆 Уровни для singleplayer</li>
+
+			</ul>
+			<style>
+				li {
+					list-style-type: none;
+					text-align: left;
+				}
+			</style>
+		</div>
+	</div>
+	<div
+			class="step"
+			step="11"
+			data-x="2500"
+			data-y="100"
 			data-scale="1"
 			data-rotate-z="90"
 	>
@@ -129,7 +256,7 @@
 	</div>
 	<div
 			class="step"
-			step="7"
+			step="12"
 			id="ThreeD"
 			data-y="3700"
 			data-rotate-x="180"
@@ -150,5 +277,6 @@
     impress().init();
 </script>
 <script src="components/wallpaper/index.js"></script>
+<script src="https://kit.fontawesome.com/ce71bee884.js" crossorigin="anonymous"></script>
 </body>
 </html>

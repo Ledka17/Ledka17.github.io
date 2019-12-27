@@ -137,3 +137,13 @@ a {
 .monitoring img {
     width: 70%;
 }
+
+ul.team li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
