@@ -1,6 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville|Racing+Sans+One|Satisfy);
-
-
+body {
+    height: 100%;
+    overflow: hidden;
+}
 
 .impress-supported .fallback-message,
 .step .notes {
@@ -8,11 +9,16 @@
 }
 
 .step {
-    width: 800px;
+    min-width: 800px;
+}
+
+header {
+    text-align: left;
+    padding-bottom: 10px;
 }
 
 .logo {
-    width: auto;
+    width: 200px;
 }
 
 .grid {
@@ -23,15 +29,18 @@
     grid-template-columns: 33% 33% 33%;
 }
 
-.grid.links{
+.grid.links {
     text-align: left;
     grid-template-columns: 50% 50%;
+}
+
+.grid.links a {
+    opacity: .5;
 }
 
 body {
     font-size: 200%;
     text-align: center;
-    font-family: Libre Baskerville;
 }
 
 p {
@@ -41,18 +50,10 @@ p {
     margin-top: 0.3em;
 }
 
-em {
-    font-family: Satisfy;
-    font-size: 142%;
-}
-
-strong {
-    font-family: Racing Sans One;
-    font-size: 127%;
-    letter-spacing: -2px;
-}
-
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: normal;
     margin-bottom: 0.3em;
     margin-top: 0.3em;
@@ -64,7 +65,6 @@ ul {
 
 li {
     font-size: 125%;
-    font-family: serif;
     font-weight: normal;
     margin-bottom: 0.3em;
     margin-top: 0.3em;
@@ -78,11 +78,62 @@ a {
     color: black;
 }
 
-#ThreeD H1 {
-    font-family: Racing Sans One;
+#ThreeD h1 {
     font-size: 300%;
 }
 
-#thequestion p {
-    font-family: Racing Sans One;
+.caption {
+    opacity: .7;
+    font-size: .7em;
+    margin-bottom: 1em;
+}
+
+.play-button {
+    box-shadow: 8px 8px 20px 0px #5672e6;
+    margin: auto;
+    font-weight: bold;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 4em 2em 2em;
+    border-radius: 10px;
+    background-position: right center;
+    background-size: 200% auto;
+    color: white;
+    background-image: linear-gradient(90deg, #4776e6 0%, #a95ae9 51%, #4776e6 100%);
+    text-align: left;
+    padding: .9em 1em;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    user-select: none;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.play-button:hover {
+    transform: scale(1.15);
+}
+
+.button-icon {
+    font-size: 2em;
+    text-align: left;
+}
+
+.plate.architecture {
+    background: #320443;
+    width: 1000px;
+}
+
+.architecture img {
+    width: 100%;
+}
+
+.plate.monitoring {
+    width: 1000px;
+}
+
+.monitoring img {
+    width: 70%;
 }

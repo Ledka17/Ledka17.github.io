@@ -1,136 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>LeMMaS</title>
-    <link rel="stylesheet" href="style.css" media="screen,projection"/>
-    <link rel="stylesheet" href="common.css" media="screen,projection"/>
-
+	<meta charset="UTF-8"/>
+	<title>LeMMaS</title>
+	<link rel="stylesheet" href="style.css" media="screen,projection"/>
+	<link rel="stylesheet" href="common.css" media="screen,projection"/>
+	<link
+			rel="stylesheet"
+			href="components/wallpaper/style.css"
+			media="screen,projection"
+	/>
+	<script src="https://kit.fontawesome.com/ce71bee884.js" crossorigin="anonymous"></script>
 </head>
-<body class="impress-supported impress-enabled impress-on-overview" style="height: 100%; overflow: hidden;">
-
+<body class="impress-supported impress-enabled impress-on-overview">
+<div class="wallpaper"></div>
 <div id="impress" data-transition-duration="1500">
-    <div class="step" step="0" data-x="3200" data-y="0">
+	<div class="step" step="0" data-x="3200" data-y="0">
+		<header class="header">
+			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
+		</header>
+		<div class="plate plate__size-big">
+			<img
+					src="https://lemmas.s3.eu-west-3.amazonaws.com/trump.png"
+					alt="Trump"
+			/>
+			<h2 id="making-presentations-is-no-fun">Lemmas</h2>
+			<div class="caption">Игра про голодные шарики, вдохновленная Agar.io</div>
+		</div>
+	</div>
+	<div class="step" step="1" data-x="4800" data-y="0">
+		<header class="header">
+			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
+		</header>
+		<div class="plate plate__size-big">
+			<a href="https://lemmas.ru" target="_blank" class="play-button"><span class="button-icon">😎</span>
+				Играть</a>
+			<div class="caption" style="margin-top: 60px">Давайте попробуем наш проект</div>
+		</div>
+	</div>
+	<div class="step" step="2" data-y="1000" data-x="4800">
+		<header class="header">
+			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
+		</header>
+		<div class="plate plate__size-big architecture">
+			<img src="img/architecture.png">
+		</div>
+	</div>
+	<div class="step" step="3" data-x="4800" data-y="2000" data-rotate-z="90">
+		<header class="header">
+			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
+		</header>
+		<div class="plate plate__size-big monitoring">
+			<h2><i class="fas fa-file-medical-alt"></i> Мониторинг</h2>
+			<div class="caption">Sentry, Prometheus</div>
+			<img src="img/sentry.png" alt="Sentry">
+		</div>
+	</div>
+	<div
+			class="step"
+			step="4"
+			data-x="4800"
+			data-y="2500"
+			data-scale="0.1"
+			data-rotate-z="90"
+	>
+		<header class="header">
+			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
+		</header>
+		<div class="plate plate__size-big">
+			<h1>Давайте попробуем наш <a href="http://lemmas.ru/">проект</a></h1>
+		</div>
+	</div>
+	<div
+			class="step hidden"
+			step="5"
+			data-x="4000"
+			data-scale="1"
+			data-y="2500"
+			data-rotate-z="90"
+	>
+		<header class="header">
+			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
+		</header>
+		<div class="plate plate__size-big">
+			<h1 id="pan">Наши планы</h1>
+			<h4>Приватные комнаты</h4>
+			<h4>Платная реклама</h4>
+			<h4>Уровни для singleplayer</h4>
+		</div>
+	</div>
+	<div
+			class="step"
+			step="6"
+			data-x="3200"
+			data-y="2500"
+			data-scale="1"
+			data-rotate-z="90"
+	>
+		<header class="header">
+			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
+		</header>
+		<div class="plate plate__size-big">
+			<h1 id="what-about-impress-js">Явки, пароли</h1>
+			<p>Авторы</p>
+			<div class="grid links">
+				<div>Сударев Максим</div>
+				<div><a href="https://github.com/smi97">github.com/smi97</a></div>
+				<div>Можевикина Леда</div>
+				<div>
+					<a href="https://github.com/ledka17">github.com/ledka17</a>
+				</div>
+				<div>Кобзев Антон</div>
+				<div><a href="https://github.com/kzon">github.com/kzon</a></div>
+			</div>
 
-        <header class="header">
-            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/src/assets/img/lemmaslogo.png" alt="logo">
-        </header>
-        <div class="plate plate__size-big start-game-menu">
-            <h1 id="the-problem">AGAR.io</h1>
-            <h2 id="making-presentations-is-no-fun">Lemmas production</h2>
-        </div>
-    </div>
-    <div class="step" step="1" data-x="4800" data-y="0">
-        <header class="header">
-            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/src/assets/img/lemmaslogo.png" alt="logo">
-        </header>
-        <div class="plate plate__size-big start-game-menu">
-            <h1 id="rotate">Об игре</h1>
-            <img class="step__image" src="https://i.gifer.com/7qlH.gif" alt="img">
-        </div>
-    </div>
-    <div class="step" step="2" data-y="1000" data-x="4800">
-        <header class="header">
-            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/src/assets/img/lemmaslogo.png" alt="logo">
-        </header>
-        <div class="plate plate__size-big start-game-menu">
-            <h1 id="gui-tools-are-inflexible">Наша команда</h1>
-            <div class="grid team">
-                <div>
-                    <div class="userPicName">
-                        <img class="userPicName__img" alt="userpic" src="img/Anton.jpg">
-                    </div>
-                    <h5>Антон Кобзев</h5>
-                    <h6>FullStack</h6>
-                </div>
-                <div>
-                    <div class="userPicName">
-                        <img class="userPicName__img" alt="userpic" src="img/Maxim.jpg">
-                    </div>
-                    <h5>Максим Сударев</h5>
-                    <h6>Frontend</h6>
-                </div>
-                <div>
-                    <div class="userPicName">
-                        <img class="userPicName__img" alt="userpic" src="img/Leda.jpg">
-                    </div>
-                    <h5>Леонарда Можевикина</h5>
-                    <h6>Backend</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="step" step="3" data-x="4800" data-y="2000" data-rotate-z="90">
-        <header class="header">
-            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/src/assets/img/lemmaslogo.png" alt="logo">
-        </header>
-        <div class="plate plate__size-big start-game-menu">
-            <h1 id="and-zoom">Технологии</h1>
-            <h4 class="code_of_project">{ <br>
-                &nbsp;&nbsp; "Amazon S3": save files, <br>
-                &nbsp;&nbsp; "Sentry": for logging, <br>
-                &nbsp;&nbsp; "WebSocket": in dev, <br>
-                }
-            </h4>
-        </div>
-    </div>
-    <div class="step" step="4" data-x="4800" data-y="2500" data-scale="0.1" data-rotate-z="90">
-        <header class="header">
-            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/src/assets/img/lemmaslogo.png" alt="logo">
-        </header>
-        <div class="plate plate__size-big start-game-menu">
-            <h1>Давайте попробуем наш <a href="http://lemmas.ru/">проект</a></h1>
-        </div>
-    </div>
-    <div class="step hidden" step="5" data-x="4000" data-scale="1" data-y="2500" data-rotate-z="90">
-        <header class="header">
-            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/src/assets/img/lemmaslogo.png" alt="logo">
-        </header>
-        <div class="plate plate__size-big start-game-menu">
-            <h1 id="pan">Наши планы</h1>
-            <h4>Приватные комнаты</h4>
-            <h4>Платная реклама</h4>
-            <h4>Уровни для singleplayer</h4>
-        </div>
-    </div>
-    <div class="step" step="6" data-x="3200" data-y="2500" data-scale="1" data-rotate-z="90">
-
-        <header class="header">
-            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/src/public/assets/img/lemmaslogo.png" alt="logo">
-        </header>
-        <div class="plate plate__size-big start-game-menu">
-            <h1 id="what-about-impress-js">Явки, пароли</h1>
-            <p>Авторы</p>
-            <div class="grid links">
-                <div>Сударев Максим</div>
-                <div><a href="https://github.com/smi97">github.com/smi97</a></div>
-                <div>Можевикина Леда</div>
-                <div><a href="https://github.com/ledka17">github.com/ledka17</a></div>
-                <div>Кобзев Антон</div>
-                <div><a href="https://github.com/kzon">github.com/kzon</a></div>
-            </div>
-
-            <p>Менторы</p>
-            <div class="grid links">
-                <div>Лиза Щербакова</div>
-                <div><a href="https://github.com/Liza-Shch">github.com/Liza-Shch</a></div>
-                <div>Дмитрий Палий</div>
-                <div><a href="https://github.com/stanf0rd">github.com/stanf0rd</a></div>
-            </div>
-            <p></p>
-            <a href="https://go-park-mail-ru.github.io/2019_2_LeMMaS">Документация по API</a>
-        </div>
-    </div>
-    <div class="step" step="7" id="ThreeD" data-y="3700" data-rotate-x="180" data-x="3200" data-scale="1" data-rotate-z="90">
-        <header class="header">
-            <img class="logo logo__image" src="https://raw.githubusercontent.com/frontend-park-mail-ru/2019_2_LeMMaS/master/src/assets/img/lemmaslogo.png" alt="logo">
-        </header>
-        <div class="plate plate__size-big start-game-menu">
-            <h1 id="in-three-dimensions">Спасибо за внимание!</h1>
-        </div>
-    </div>
+			<p>Менторы</p>
+			<div class="grid links">
+				<div>Лиза Щербакова</div>
+				<div>
+					<a href="https://github.com/Liza-Shch">github.com/Liza-Shch</a>
+				</div>
+				<div>Дмитрий Палий</div>
+				<div>
+					<a href="https://github.com/stanf0rd">github.com/stanf0rd</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div
+			class="step"
+			step="7"
+			id="ThreeD"
+			data-y="3700"
+			data-rotate-x="180"
+			data-x="3200"
+			data-scale="1"
+			data-rotate-z="90"
+	>
+		<header class="header">
+			<img class="logo logo__image" src="img/lemmaslogo.png" alt="logo"/>
+		</header>
+		<div class="plate plate__size-big">
+			<h1 id="in-three-dimensions">Спасибо за внимание!</h1>
+		</div>
+	</div>
 </div>
-    <script src="impress.js"></script>
-    <script>impress().init();</script>
+<script src="impress.js"></script>
+<script>
+    impress().init();
+</script>
+<script src="components/wallpaper/index.js"></script>
 </body>
 </html>
